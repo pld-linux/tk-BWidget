@@ -2,7 +2,7 @@ Summary:	High-level Widget Set for Tcl/Tk
 Summary(pl):	Wysokopoziomowy zestaw widgetów dla Tcl/Tk
 Name:		tk-BWidget
 Version:	1.7.0
-Release:	1
+Release:	2
 License:	distributable
 Group:		Development/Languages/Tcl
 Source0:	http://dl.sourceforge.net/tcllib/BWidget-%{version}.tar.gz
@@ -36,11 +36,11 @@ platformy, nie wymagaj± kompilacji. Kod jest w 100% czystym Tcl/Tk.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name} \
-	$RPM_BUILD_ROOT%{_libdir}/%{name}%{version}/{lang,images}
+	$RPM_BUILD_ROOT/lib/%{name}%{version}/{lang,images}
 
-install *.tcl $RPM_BUILD_ROOT%{_libdir}/%{name}%{version}
-install lang/*  $RPM_BUILD_ROOT%{_libdir}/%{name}%{version}/lang
-install images/*  $RPM_BUILD_ROOT%{_libdir}/%{name}%{version}/images
+install *.tcl $RPM_BUILD_ROOT/usr/lib/%{name}%{version}
+install lang/*  $RPM_BUILD_ROOT/usr/lib//%{name}%{version}/lang
+install images/*  $RPM_BUILD_ROOT/usr/lib/%{name}%{version}/images
 install demo/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 
 %clean
@@ -49,12 +49,12 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES.txt ChangeLog LICENSE.txt README.txt BWman
-%dir %{_libdir}/%{name}%{version}
-%{_libdir}/%{name}%{version}/*.tcl
-%{_libdir}/%{name}%{version}/images
-%dir %{_libdir}/%{name}%{version}/lang
-%{_libdir}/%{name}%{version}/lang/en.rc
-%lang(de) %{_libdir}/%{name}%{version}/lang/de.rc
-%lang(es) %{_libdir}/%{name}%{version}/lang/es.rc
-%lang(fr) %{_libdir}/%{name}%{version}/lang/fr.rc
+%dir /usr/lib/%{name}%{version}
+/usr/lib/%{name}%{version}/*.tcl
+/usr/lib/%{name}%{version}/images
+%dir /usr/lib/%{name}%{version}/lang
+/usr/lib/%{name}%{version}/lang/en.rc
+%lang(de) /usr/lib/%{name}%{version}/lang/de.rc
+%lang(es) /usr/lib/%{name}%{version}/lang/es.rc
+%lang(fr) /usr/lib/%{name}%{version}/lang/fr.rc
 %{_examplesdir}/%{name}
