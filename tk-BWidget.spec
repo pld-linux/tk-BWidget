@@ -20,10 +20,17 @@ Toolkits (Tix or Incr Widgets), but the concept is radically different
 because everything is pure Tcl/Tk.  No platform dependencies, and no
 compiling required.  The code is 100% Pure Tcl/Tk.
 
+%description -l pl
+BWidget Toolkit to wysokopoziomowy zestaw widgetów dla Tcl/Tk
+zbudowany przy u¿yciu natywnych przestrzeni nazw Tcl/Tk 8.x.
+
+BWidgets maj± profesjonalny wygl±d jak w innych dobrze znanych
+toolkitach (Tix lub Incr Widgets), ale koncepcyjnie s± ca³kowicie
+inne, poniewa¿ wszysko jest czystym Tcl/Tk. Nie ma zale¿no¶ci od
+platformy, nie wymagaj± kompilacji. Kod jest w 100% czystym Tcl/Tk.
+
 %prep
 %setup -qn BWidget-%{version}
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
