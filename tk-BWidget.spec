@@ -2,7 +2,7 @@ Summary:	High-level Widget Set for Tcl/Tk
 Summary(pl):	Wysokopoziomowy zestaw widgetów dla Tcl/Tk
 Name:		tk-BWidget
 Version:	1.7.0
-Release:	2
+Release:	3
 License:	distributable
 Group:		Development/Languages/Tcl
 Source0:	http://dl.sourceforge.net/tcllib/BWidget-%{version}.tar.gz
@@ -36,7 +36,7 @@ platformy, nie wymagaj± kompilacji. Kod jest w 100% czystym Tcl/Tk.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name} \
-	$RPM_BUILD_ROOT/lib/%{name}%{version}/{lang,images}
+	$RPM_BUILD_ROOT/usr/lib/%{name}%{version}/{lang,images}
 
 install *.tcl $RPM_BUILD_ROOT/usr/lib/%{name}%{version}
 install lang/*  $RPM_BUILD_ROOT/usr/lib//%{name}%{version}/lang
