@@ -5,7 +5,7 @@ Version:	1.4.1
 Release:	1
 License:	distributable
 Group:		Development/Languages/Tcl
-Source0:	http://prdownloads.sourceforge.net/tcllib/BWidget-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/tcllib/BWidget-%{version}.tar.gz
 URL:		http://sourceforge.net/projects/tcllib/
 Requires:	tk >= 8.3.3
 BuildArch:	noarch
