@@ -12,6 +12,8 @@ Requires:	tk >= 8.3.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_ulibdir	/usr/lib
+
 %description
 The BWidget Toolkit is a high-level Widget Set for Tcl/Tk built using
 native Tcl/Tk 8.x namespaces.
@@ -36,11 +38,11 @@ platformy, nie wymagaj± kompilacji. Kod jest w 100% czystym Tcl/Tk.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name} \
-	$RPM_BUILD_ROOT/usr/lib/%{name}%{version}/{lang,images}
+	$RPM_BUILD_ROOT%{_ulibdir}/%{name}%{version}/{lang,images}
 
-install *.tcl $RPM_BUILD_ROOT/usr/lib/%{name}%{version}
-install lang/*  $RPM_BUILD_ROOT/usr/lib//%{name}%{version}/lang
-install images/*  $RPM_BUILD_ROOT/usr/lib/%{name}%{version}/images
+install *.tcl $RPM_BUILD_ROOT%{_ulibdir}/%{name}%{version}
+install lang/*  $RPM_BUILD_ROOT%{_ulibdir}//%{name}%{version}/lang
+install images/*  $RPM_BUILD_ROOT%{_ulibdir}/%{name}%{version}/images
 install demo/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}
 
 %clean
@@ -49,12 +51,12 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES.txt ChangeLog LICENSE.txt README.txt BWman
-%dir /usr/lib/%{name}%{version}
-/usr/lib/%{name}%{version}/*.tcl
-/usr/lib/%{name}%{version}/images
-%dir /usr/lib/%{name}%{version}/lang
-/usr/lib/%{name}%{version}/lang/en.rc
-%lang(de) /usr/lib/%{name}%{version}/lang/de.rc
-%lang(es) /usr/lib/%{name}%{version}/lang/es.rc
-%lang(fr) /usr/lib/%{name}%{version}/lang/fr.rc
+%dir %{_ulibdir}/%{name}%{version}
+%{_ulibdir}/%{name}%{version}/*.tcl
+%{_ulibdir}/%{name}%{version}/images
+%dir %{_ulibdir}/%{name}%{version}/lang
+%{_ulibdir}/%{name}%{version}/lang/en.rc
+%lang(de) %{_ulibdir}/%{name}%{version}/lang/de.rc
+%lang(es) %{_ulibdir}/%{name}%{version}/lang/es.rc
+%lang(fr) %{_ulibdir}/%{name}%{version}/lang/fr.rc
 %{_examplesdir}/%{name}
