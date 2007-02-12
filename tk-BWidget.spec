@@ -1,5 +1,5 @@
 Summary:	High-level Widget Set for Tcl/Tk
-Summary(pl):	Wysokopoziomowy zestaw widgetÛw dla Tcl/Tk
+Summary(pl.UTF-8):   Wysokopoziomowy zestaw widget√≥w dla Tcl/Tk
 Name:		tk-BWidget
 Version:	1.7.0
 Release:	4
@@ -23,14 +23,14 @@ Toolkits (Tix or Incr Widgets), but the concept is radically different
 because everything is pure Tcl/Tk.  No platform dependencies, and no
 compiling required.  The code is 100% Pure Tcl/Tk.
 
-%description -l pl
-BWidget Toolkit to wysokopoziomowy zestaw widgetÛw dla Tcl/Tk
-zbudowany przy uøyciu natywnych przestrzeni nazw Tcl/Tk 8.x.
+%description -l pl.UTF-8
+BWidget Toolkit to wysokopoziomowy zestaw widget√≥w dla Tcl/Tk
+zbudowany przy u≈ºyciu natywnych przestrzeni nazw Tcl/Tk 8.x.
 
-BWidgets maj± profesjonalny wygl±d jak w innych dobrze znanych
-toolkitach (Tix lub Incr Widgets), ale koncepcyjnie s± ca≥kowicie
-inne, poniewaø wszystko jest czystym Tcl/Tk. Nie ma zaleøno∂ci od
-platformy, nie wymagaj± kompilacji. Kod jest w 100% czystym Tcl/Tk.
+BWidgets majƒÖ profesjonalny wyglƒÖd jak w innych dobrze znanych
+toolkitach (Tix lub Incr Widgets), ale koncepcyjnie sƒÖ ca≈Çkowicie
+inne, poniewa≈º wszystko jest czystym Tcl/Tk. Nie ma zale≈ºno≈õci od
+platformy, nie wymagajƒÖ kompilacji. Kod jest w 100% czystym Tcl/Tk.
 
 %prep
 %setup -qn BWidget-%{version}
