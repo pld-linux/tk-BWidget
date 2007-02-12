@@ -1,5 +1,5 @@
 Summary:	High-level Widget Set for Tcl/Tk
-Summary(pl.UTF-8):   Wysokopoziomowy zestaw widgetów dla Tcl/Tk
+Summary(pl.UTF-8):	Wysokopoziomowy zestaw widgetów dla Tcl/Tk
 Name:		tk-BWidget
 Version:	1.7.0
 Release:	4
