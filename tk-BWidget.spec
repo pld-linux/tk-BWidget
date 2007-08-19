@@ -56,8 +56,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_ulibdir}/%{name}%{version}/images
 %dir %{_ulibdir}/%{name}%{version}/lang
 %{_ulibdir}/%{name}%{version}/lang/en.rc
-%lang(de) %{_ulibdir}/%{name}%{version}/lang/de.rc
 %lang(da) %{_ulibdir}/%{name}%{version}/lang/da.rc
+%lang(de) %{_ulibdir}/%{name}%{version}/lang/de.rc
 %lang(es) %{_ulibdir}/%{name}%{version}/lang/es.rc
 %lang(fr) %{_ulibdir}/%{name}%{version}/lang/fr.rc
 %{_examplesdir}/%{name}
