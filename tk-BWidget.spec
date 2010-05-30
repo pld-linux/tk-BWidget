@@ -3,7 +3,7 @@ Summary:	High-level Widget Set for Tcl/Tk
 Summary(pl.UTF-8):	Wysokopoziomowy zestaw widgetów dla Tcl/Tk
 Name:		tk-BWidget
 Version:	1.9.0
-Release:	1
+Release:	2
 License:	TCL
 Group:		Development/Libraries
 Source0:	http://dl.sourceforge.net/tcllib/BWidget-%{version}.tar.gz
