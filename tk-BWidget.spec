@@ -2,18 +2,18 @@
 Summary:	High-level Widget Set for Tcl/Tk
 Summary(pl.UTF-8):	Wysokopoziomowy zestaw widgetów dla Tcl/Tk
 Name:		tk-BWidget
-Version:	1.9.0
-Release:	2
+Version:	1.9.2
+Release:	1
 License:	TCL
 Group:		Development/Libraries
-Source0:	http://dl.sourceforge.net/tcllib/BWidget-%{version}.tar.gz
-# Source0-md5:	d4d31f0279c87b024aa3f900a8cbf549
+Source0:	http://downloads.sourceforge.net/tcllib/BWidget-%{version}.tar.bz2
+# Source0-md5:	57a25be3c54cd35e4c9cb9f2380ba780
 URL:		http://sourceforge.net/projects/tcllib/
 BuildRequires:	rpmbuild(macros) >= 1.517
 BuildRequires:	sed >= 4.0
 BuildRequires:	tcl >= 8.4
 Requires:	tcl >= %{tcl_version}
-Requires:	tk >= 8.3.3
+Requires:	tk >= 8.4
 Obsoletes:	tcl-bwidget
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -70,5 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %lang(fr) %{tcl_sitelib}/%{package}%{version}/lang/fr.rc
 %lang(hu) %{tcl_sitelib}/%{package}%{version}/lang/hu.rc
 %lang(nl) %{tcl_sitelib}/%{package}%{version}/lang/nl.rc
-%lang(no) %{tcl_sitelib}/%{package}%{version}/lang/no.rc
+%lang(nb) %{tcl_sitelib}/%{package}%{version}/lang/no.rc
+%lang(pl) %{tcl_sitelib}/%{package}%{version}/lang/pl.rc
 %{_examplesdir}/%{name}-%{version}
