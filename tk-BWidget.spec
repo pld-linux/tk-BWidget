@@ -1,4 +1,4 @@
-%define		package	bwidget
+%define		packagename		bwidget
 Summary:	High-level Widget Set for Tcl/Tk
 Summary(pl.UTF-8):	Wysokopoziomowy zestaw widgetów dla Tcl/Tk
 Name:		tk-BWidget
@@ -45,10 +45,10 @@ rm -rf $RPM_BUILD_ROOT
 # Don't bother with the included configure script and Makefile.  They
 # are missing a lot of pieces and won't work at all.  Installation is
 # pretty simple, so we can just do it here manually.
-install -d $RPM_BUILD_ROOT%{tcl_sitelib}/%{package}%{version}/{lang,images}
-cp -a *.tcl $RPM_BUILD_ROOT%{tcl_sitelib}/%{package}%{version}
-cp -a lang/*.rc $RPM_BUILD_ROOT%{tcl_sitelib}/%{package}%{version}/lang
-cp -a images/*.gif images/*.xbm $RPM_BUILD_ROOT%{tcl_sitelib}/%{package}%{version}/images
+install -d $RPM_BUILD_ROOT%{tcl_sitelib}/%{packagename}%{version}/{lang,images}
+cp -a *.tcl $RPM_BUILD_ROOT%{tcl_sitelib}/%{packagename}%{version}
+cp -a lang/*.rc $RPM_BUILD_ROOT%{tcl_sitelib}/%{packagename}%{version}/lang
+cp -a images/*.gif images/*.xbm $RPM_BUILD_ROOT%{tcl_sitelib}/%{packagename}%{version}/images
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a demo/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
@@ -59,17 +59,17 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES.txt ChangeLog LICENSE.txt README.txt BWman/*.html
-%dir %{tcl_sitelib}/%{package}%{version}
-%{tcl_sitelib}/%{package}%{version}/*.tcl
-%{tcl_sitelib}/%{package}%{version}/images
-%dir %{tcl_sitelib}/%{package}%{version}/lang
-%{tcl_sitelib}/%{package}%{version}/lang/en.rc
-%lang(da) %{tcl_sitelib}/%{package}%{version}/lang/da.rc
-%lang(de) %{tcl_sitelib}/%{package}%{version}/lang/de.rc
-%lang(es) %{tcl_sitelib}/%{package}%{version}/lang/es.rc
-%lang(fr) %{tcl_sitelib}/%{package}%{version}/lang/fr.rc
-%lang(hu) %{tcl_sitelib}/%{package}%{version}/lang/hu.rc
-%lang(nl) %{tcl_sitelib}/%{package}%{version}/lang/nl.rc
-%lang(nb) %{tcl_sitelib}/%{package}%{version}/lang/no.rc
-%lang(pl) %{tcl_sitelib}/%{package}%{version}/lang/pl.rc
+%dir %{tcl_sitelib}/%{packagename}%{version}
+%{tcl_sitelib}/%{packagename}%{version}/*.tcl
+%{tcl_sitelib}/%{packagename}%{version}/images
+%dir %{tcl_sitelib}/%{packagename}%{version}/lang
+%{tcl_sitelib}/%{packagename}%{version}/lang/en.rc
+%lang(da) %{tcl_sitelib}/%{packagename}%{version}/lang/da.rc
+%lang(de) %{tcl_sitelib}/%{packagename}%{version}/lang/de.rc
+%lang(es) %{tcl_sitelib}/%{packagename}%{version}/lang/es.rc
+%lang(fr) %{tcl_sitelib}/%{packagename}%{version}/lang/fr.rc
+%lang(hu) %{tcl_sitelib}/%{packagename}%{version}/lang/hu.rc
+%lang(nl) %{tcl_sitelib}/%{packagename}%{version}/lang/nl.rc
+%lang(nb) %{tcl_sitelib}/%{packagename}%{version}/lang/no.rc
+%lang(pl) %{tcl_sitelib}/%{packagename}%{version}/lang/pl.rc
 %{_examplesdir}/%{name}-%{version}
