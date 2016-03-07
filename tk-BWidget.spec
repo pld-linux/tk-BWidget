@@ -4,7 +4,7 @@ Summary(pl.UTF-8):	Wysokopoziomowy zestaw widgetów dla Tcl/Tk
 Name:		tk-BWidget
 Version:	1.9.9
 Release:	1
-License:	TCL
+License:	Tcl (BSD-like)
 Group:		Development/Libraries
 Source0:	http://downloads.sourceforge.net/tcllib/bwidget-%{version}.tar.gz
 # Source0-md5:	59c96f5f858a579327e5f02aeb7e8fb2
